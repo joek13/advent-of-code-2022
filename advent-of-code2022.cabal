@@ -1,0 +1,65 @@
+cabal-version:      2.4
+name:               advent-of-code2022
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Joe Kerrigan
+maintainer:         joek1301@gmail.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+common shared-properties
+    default-language: Haskell2010
+    default-extensions: ScopedTypeVariables
+    hs-source-dirs: src
+    build-depends:
+        containers,
+        regex-tdfa,
+        base == 4.*
+    ghc-options:
+        -Wall
+
+executable day1a
+    import: shared-properties
+    main-is:          1a.hs
+
+executable day1b
+    import: shared-properties
+    main-is:          1b.hs
+
+executable day2a
+    import: shared-properties
+    main-is:          2a.hs
+
+executable day2b
+    import: shared-properties
+    main-is:          2b.hs
+
+executable day3a
+    import: shared-properties
+    main-is:          3a.hs
+
+executable day3b
+    import: shared-properties
+    main-is:          3b.hs
+
+executable day4a
+    import: shared-properties
+    main-is:          4a.hs
+
+executable day4b
+    import: shared-properties
+    main-is:          4b.hs
