@@ -71,3 +71,11 @@ executable day5a
 executable day5b
     import: shared-properties
     main-is:          5b.hs
+
+executable day6a
+    import: shared-properties
+    main-is:          6a.hs
+
+executable day6b
+    import: shared-properties
+    main-is:          6b.hs
