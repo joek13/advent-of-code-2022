@@ -28,6 +28,7 @@ common shared-properties
     build-depends:
         containers,
         regex-tdfa,
+        mtl,
         base == 4.*
     ghc-options:
         -Wall
@@ -95,3 +96,7 @@ executable day8a
 executable day8b
     import: shared-properties
     main-is:          8b.hs
+
+executable day9a
+    import: shared-properties
+    main-is:          9a.hs
