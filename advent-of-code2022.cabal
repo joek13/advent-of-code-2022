@@ -100,3 +100,7 @@ executable day8b
 executable day9a
     import: shared-properties
     main-is:          9a.hs
+
+executable day9b
+    import: shared-properties
+    main-is:          9b.hs
